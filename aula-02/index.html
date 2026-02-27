@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina 00</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="root">
+
+    </div>
+    <script type="text/babel">
+        const Titulo = function(){
+            return <h1> Games clássicos </h1>
+        }
+
+        const App = function(){
+            return (
+                <>
+                 <Titulo />
+                 <Game Titulo="Come Comme" ano="1980" console="Atari 2600"/>
+                 <Game Titulo="Saquest" ano="1987" console="Atari 2600"/>
+                 <Game Titulo="Pacman" ano="1980" console="Arcade"/>
+                 <Game Titulo="Space Invaders" ano="1978" console="Arcade"/>
+                 <Game Titulo="Donkey Kong" ano="1981" console="Arcade"/>
+                </>
+            )
+        }
+
+        const Game = function(props){
+            return(
+                <ul>
+                    <li>Titulo: {props.Titulo}</li>
+                    <li>Ano de lançamento: {props.ano}</li>
+                    <li>Console: {props.console} </li>
+                </ul>
+            )
+        }
+        ReactDOM.render(
+            <App/>, 
+            document.getElementById('root')
+        )
+     
+    </script>
+    
+</body>
+</html>
