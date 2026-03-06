@@ -65,6 +65,11 @@
             document.getElementById('tela2').value = 'Resposta incorreta!';
 
             Dados.tentativa++;
+
+            if (Dados.tentativa > 3) {
+              Dados.pergunta++;
+              Dados.tentativa = 1;
+            }
           }
 
         }
