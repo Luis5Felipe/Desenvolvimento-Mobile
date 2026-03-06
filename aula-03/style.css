@@ -1,0 +1,72 @@
+body {
+  background-color: #cccccc;
+  text-align: center;
+}
+
+#app {
+  background-color: #eeeebb;
+  width: 93%;
+  max-width: 300px;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+}
+
+#logo {
+  width: 50%;
+}
+
+#tela1 {
+  background-color: black;
+  border: black 1px solid;
+  width: 90%;
+  height: 75px;
+  color: red;
+  font-family: courier new;
+  font-size: 30pt;
+  font-weight: bold;
+  text-align: center;
+}
+
+#tela2 {
+  background-color: black;
+  border: black 1px solid;
+  width: 90%;
+  height: 25px;
+  color: white;
+  font-family: courier new;
+  font-size: 15pt;
+  font-weight: bold;
+  text-align: center;
+}
+
+.botao {
+  width: 45%;
+  height: 100px;
+  border: black 1px solid;
+  font-size: 24pt;
+  color: white;
+  border-radius: 10px;
+}
+
+#botaoA {
+  background-color: red;
+}
+#botaoB {
+  background-color: blue;
+}
+#botaoC {
+  background-color: yellow;
+}
+#botaoD {
+  background-color: green;
+}
+
+#botaoStart {
+  background-color: #cccccc;
+  width: 90%;
+  height: 50px;
+  font-size: 24pt;
+  color: white;
+  border-radius: 10px;
+}
